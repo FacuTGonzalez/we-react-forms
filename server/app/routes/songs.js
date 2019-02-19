@@ -67,7 +67,7 @@ function showMetadata(metadata, res) {
 
 router.get('/:songId/image', function(req, res, next) {
   const parsed = urlParse(req.song.url);
-  if (parsed.protocol === null) {
+  if (parsed.protocol === 'file:') {
     return mm
       .parseFile(parsed.path, { native: true })
       .then(metadata => {
