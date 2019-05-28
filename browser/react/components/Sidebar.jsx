@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default () => (
   <div className="col-xs-2">
-      <sidebar>
+      <section className= 'sidebar'>
         <img src="/juke.svg" className="logo" />
         <section>
           <h4 className="menu-item active">
@@ -15,6 +15,6 @@ export default () => (
             <Link to="/artists">ARTISTS</Link>
           </h4>
         </section>
-      </sidebar>
+      </section>
     </div>
 );
